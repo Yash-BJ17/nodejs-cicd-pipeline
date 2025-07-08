@@ -5,11 +5,6 @@ pipeline {
     }
 
     stages {
-        stage('Clone Repo') {
-            steps {
-                git branch: 'main', url: 'https://github.com/Yash-BJ17/nodejs-cicd-pipeline.git'
-            }
-        }
 
         stage('Build Docker Image') {
             steps {
